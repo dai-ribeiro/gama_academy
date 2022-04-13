@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Banco de Currículos</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>BANCO DE CURRÍCULOS</h1>
+    </header>
+
+    
+    <form action="">
+
+    <fieldset class="grupo">
+        <h3>DADOS PESSOAIS</h3>    
+            <div class="cargo">
+                <label for="cargo" id="cargo">Cargo Pretendido</label>
+                <input type="text"> 
+            </div>   
+            <br>
+            <div class="dados_pessoais">
+                <label id='nome'>Nome Completo <span id="obrigatorio">*</span></label>
+                <input type="text" required>
+                    
+                <label id="data">Data de Nascimento <span id="obrigatorio">*</span></label>
+                <input type="date" required>
+            
+                <label id="estado_civil">Estado Civil</label>
+                    <select name="" id="civil">
+                        <option value="null"></option>
+                        <option value="casado">Casado</option>
+                        <option value="divorciado">Divorciado</option>
+                        <option value="solteiro">Solteiro</option>
+                        <option value="viuvo">Viúvo</option>
+                    </select>
+
+                <label>Sexo</label>
+                    <select name="" id="sexo">
+                        <option value="null"></option>
+                        <option value="feminino">Feminino</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="naoEspecificado">Não especificado</option>
+                    </select> 
+            </div>
+
+            <div class="endereco">
+                <label for="nome">Endereço <span id="obrigatorio">*</span></label>
+                <input type="text" required> 
+
+                <label for="bairro">Bairro <span id="obrigatorio">*</span></label>
+                <input type="text" required>
+
+                <label for="cidade">Cidade <span id="obrigatorio">*</span></label>
+                <input type="text" required> 
+
+                <label for="cep">CEP</label>
+                <input type="text"> 
+                <br>
+                <label for="telefone1">Telefone Fixo</label>
+                <input type="text"> 
+
+                <label for="celular">Celular</label>
+                <input type="text">
+                
+                <label for="email">E-mail</label>
+                <input type="text"> 
+            </div>
+    </fieldset>
+    
+    <fieldset class="grupo">
+        <h3>DOCUMENTOS</h3>
+        <form action="">
+            <label for="rg">Identidade <span id="obrigatorio">*</span></label>
+            <input type="text">
+            
+            <label for="cpf">CPF <span id="obrigatorio">*</span></label>
+            <input type="text"> 
+
+            <label for="veiculo">Possui veículo</label>
+                <select name="" id="">
+                    <option value="null"></option>
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select>
+                <br><br>
+
+            <label class="habilitacao">Habilitação:</label>
+                <div id="check">
+                    <input type="checkbox" id="moto">
+                    <label for="tecnologia1">A</label>
+                    <input type="checkbox" id="carro">
+                    <label for="tecnologia2">B</label>
+                    <input type="checkbox" id="caminhao">
+                    <label for="tecnologia3">C</label>
+                    <input type="checkbox" id="onibus">
+                    <label for="tecnologia4">D</label>
+                    <input type="checkbox" id="carreta">
+                    <label for="tecnologia5">E</label>
+                   <input type="checkbox" id="semcnh">
+                    <label for="tecnologia5">Não possui</label>
+                </div>
+                <br>
+                
+
+        <button class="botao" type="submit">Fazer consulta!</button>
+    </fieldset>
+
+    </form>
+    
+</body>
+</html>
